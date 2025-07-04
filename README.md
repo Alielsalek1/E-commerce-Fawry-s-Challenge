@@ -1,4 +1,4 @@
-# Shopping Cart System
+# e-commerce System
 
 This project is a simple Java e-commerce system.
 
