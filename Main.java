@@ -10,8 +10,8 @@ import models.impl.BasicProduct;
 public class Main {
     public static void main(String[] args) {
     // 4 tests that include common errors and the happy case
-        happyCase();
-//        insufficientQuantityCase();
+//        happyCase();
+        insufficientQuantityCase();
 //        insufficientBalanceCase();
 //        expiredProductCase();
 
@@ -32,7 +32,7 @@ public class Main {
         try {
             CheckoutService.checkout(cart);
         } catch (Exception e) {
-            System.err.println("Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
     }
 
@@ -41,12 +41,12 @@ public class Main {
         Cart cart = new Cart(customer);
         ShippableProduct tv = new ShippableProduct("TV", 300, 1, 10.0);
 
-        cart.addProduct(tv, 5); // only 1 available
 
         try {
+            cart.addProduct(tv, 5); // only 1 available
             CheckoutService.checkout(cart);
         } catch (Exception e) {
-            System.err.println("Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
     }
 
@@ -60,7 +60,7 @@ public class Main {
         try {
             CheckoutService.checkout(cart);
         } catch (Exception e) {
-            System.err.println("Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
     }
 
@@ -74,7 +74,7 @@ public class Main {
         try {
             CheckoutService.checkout(cart);
         } catch (Exception e) {
-            System.err.println("Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
     }
 }
