@@ -36,3 +36,14 @@ There are 4 product types:
    insufficientBalanceCase();
    expiredProductCase();
    ```
+
+## Screenshots of the application running
+
+![Screenshot 1](Screenshots/Screenshot%202025-07-08%20225058.png)
+
+![Screenshot 2](Screenshots/Screenshot%202025-07-08%20225111.png)
+
+![Screenshot 3](Screenshots/Screenshot%202025-07-08%20225126.png)
+
+![Screenshot 4](Screenshots/Screenshot%202025-07-08%20225139.png)
+
